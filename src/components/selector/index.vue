@@ -9,7 +9,9 @@
         width: $parent.labelWidth,
         textAlign: $parent.labelAlign,
         marginRight: $parent.labelMarginRight
-      })">{{ title }}</label>
+      })" v-html='title'>
+      <--{{ title }}-->
+      </label>
     </div>
     <div class="weui-cell__bd" v-if="!readonly">
       <select :id="`vux-selector-${uuid}`" style="color:red;" class="weui-select" v-model="currentValue" :name="name"
